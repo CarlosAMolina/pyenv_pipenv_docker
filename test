@@ -1,0 +1,16 @@
+# Bash script for pipenv testing.
+
+# Current python version.
+python -V
+
+# Pyenv verion.
+/home/nonroot/.pyenv/shims/python3.7 -V
+
+# Activate pipenv virtual environment.
+source /home/nonroot/.local/share/virtualenvs/nonroot-LcccbqV7/bin/activate
+
+# Current python version.
+python -V
+
+# Check virtual environment activated correctly.
+python test.py
