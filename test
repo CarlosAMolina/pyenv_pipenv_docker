@@ -1,16 +1,16 @@
 # Bash script for pipenv testing.
 
-# Current python version.
+echo "[DEBUG] Current Python version"
 python -V
 
-# Pyenv verion.
+echo "[DEBUG] Pyenv version"
 /home/nonroot/.pyenv/shims/python3.7 -V
 
-# Activate pipenv virtual environment.
+echo "[DEBUG] Init activate pipenv virtual environment"
 source /home/nonroot/.local/share/virtualenvs/nonroot-LcccbqV7/bin/activate
 
-# Current python version.
+echo "[DEBUG] Current Python version after activating the pipenv virtual environment"
 python -V
 
-# Check virtual environment activated correctly.
+echo "[DEBUG] Init testing the virtual environment activated correctly"
 python test.py
