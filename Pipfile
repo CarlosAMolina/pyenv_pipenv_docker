@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask = "==2.2.3"
+flask = "==2.2.5"
 
 [requires]
 python_version = "3.7"
